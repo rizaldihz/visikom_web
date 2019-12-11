@@ -87,6 +87,8 @@ async function init(img){
     let cls = getClass(pred);
     $('#output').text(classes[cls.idx] + ' ' + (cls.conf*100).toFixed(2) + '%');
     requestUpdateDetails(classes[cls.idx]);
+    detailsJSON = null;
+    cls = null;
 }
 
 function preprocess(img)
