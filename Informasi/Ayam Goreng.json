@@ -1,0 +1,16 @@
+{
+    "bahan" : [
+        "Ayam",
+        "Jeruk Nipis",
+        "Garam"
+    ],
+    "cara_pembuatan" : [
+        "Lumuri ayam dengan garam dan jeruk nipis. Diamkan 15 menit kemudian cuci bersih.",
+        "Campur ayam dengan bumbu marinasi. Diamkan di kulkas, minimal semalaman.",
+        "Goreng dalam minyak panas keesokan harinya hingga kecoklatan. Tips : pakai api sedang saja, karena ini ayamnya mudah gosong dan lengket."
+    ],
+    "rekomendasi" : {
+        "toko"      : "Ayam Goreng Nelongso",
+        "alamat"    : "Jl. Klampis Ngasem No.58, Gebang Putih, Kec. Sukolilo, Kota SBY, Jawa Timur 60117"
+    }
+}

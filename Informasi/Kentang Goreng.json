@@ -1,0 +1,21 @@
+{
+    "bahan" : [
+        "Kentang",
+        "Kunyit",
+        "Tepung Terigu",
+        "Air",
+        "Garam",
+        "Minyak Goreng"
+    ],
+    "cara_pembuatan" : [
+        "Kupas dan potong-potong kentang, kemudian iris dengan bentuk stik setebal 0,5 cm sampai 1 cm. Segera masukkan ke dalam air setelah kentang diiris agar tidak berubah warna.",
+        "Didihkan air rebusan, kemudian tambahkan 1/4 sendok teh kunyit bubuk agar kentang tidak terlalu pucat. Rebus kentang selama 3 atau 4 menit.",
+        "Tiriskan kentang dan segera masukkan ke dalam air es.",
+        "Campur terigu dan garam, kemudian gulingkan kentang di atasnya. Aduk hingga seluruh bagian kentang terlumuri tepung dan garam.",
+        "Panaskan minyak secukupnya, kemudian goreng kentang hingga berwarna kekuningan. Setelah itu angkat dan tiriskan minyaknya di atas kertas minyak atau kertas tisu."
+    ],
+    "rekomendasi" : {
+        "toko"      : "Mimi Donat Kentang", 
+        "alamat"    : "Jl. Ahmad Yani No.249, Siwalankerto, Kec. Wonocolo, Kota SBY, Jawa Timur 60231"
+    }
+}

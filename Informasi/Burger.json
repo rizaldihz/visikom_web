@@ -1,0 +1,24 @@
+{
+    "bahan" : [
+        "Daging Sapi",
+        "Garam",
+        "Merica",
+        "Bawang Bombay",
+        "Kecap Inggris",
+        "Butter",
+        "Roti",
+        "Tomat",
+        "Saus Sambal"
+    ],
+    "cara_pembuatan" : [
+        "Aduk rata semua bahan, lalu bagi menjadi 3 bagian.",
+        "Bulatkan masing-masing bagian lalu tekan sampai agak pipih. Sisihkan.",
+        "Panaskan butter atau margarin di wajan datar seperti teflon, lalu panggang daging burger sampai berubah warna kecokelatan dengan api kecil-sedang.",
+        "Jika sudah berwarna kecoklatan, angkat. Perlu diperjatikan, saat memanggang daging burger jangan terlalu sering dibolak-balik.",
+        "Siap disajikan bersama bahan pelengkap lainnya untuk menikmati burger ala rumahan."
+    ],
+    "rekomendasi" : {
+        "toko"      : "Carl's Jr.", 
+        "alamat"    : "Jl. Raya Kertajaya Indah No.29, Manyar Sabrangan, Kec. Mulyorejo, Kota SBY, Jawa Timur 60116"
+    }
+}

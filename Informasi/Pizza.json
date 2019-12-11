@@ -1,0 +1,23 @@
+{
+    "bahan" : [
+        "Tepung Terigu",
+        "Fermipan",
+        "Minyak Sayur",
+        "Garam",
+        "Gula Pasir",
+        "Air",
+        "Saus Tomat",
+        "Keju Mozarela",
+        "Bawang Bombay"
+    ],
+    "cara_pembuatan" : [
+        "Siapkan wajan teflon, kemudian panaskan dan cairkan 1 sdm mentega.",
+        "Letakkan adonan pizza diatas wajan, taburi dengan keju mozarella.",
+        "Selama memasak, tutupilah wajan dengan penutupnya, agar benar-benar matang dan keju mencair dengan sempurna.",
+        "Pizza teflon siap dihidangkan."
+    ],
+    "rekomendasi" : {
+        "toko"      : "Pizza Hut", 
+        "alamat"    : "Jl. Raya Mulyosari No.8, Kalisari, Kec. Mulyorejo, Kota SBY, Jawa Timur 60112"
+    }
+}

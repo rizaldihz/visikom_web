@@ -1,0 +1,27 @@
+{
+    "bahan" : [
+        "Tepung Terigu",
+        "Tepung Maizena",
+        "Baking Powder",
+        "Garam",
+        "Mentega Putih",
+        "Gula",
+        "Air",
+        "Selai"
+    ],
+    "cara_pembuatan" : [
+        "Siapkan wadah besar yang bersih. Masukkan tepung terigu dan gula halus lalu aduk hingga rata. Masukkan tepung maizena, ragi, dan baking powder lalu aduk hingga rata.",
+        "Tuang air sedikit demi sedikit sambil terus diaduk. Uleni hingga adonan tercampur rata dan pastikan tidak ada gumpalan. Masukkan garam dan mentega putih. Uleni lagi dengan tangan hingga tercampur sempurna.",
+        "Diamkan adonan selama 30 menit. Jangan lupa untuk menutup wadah dengan kain.",
+        "Ambil sedikit adonan lalu bentuk menjadi bulatan kecil. Bentuk hingga adonan habis.",
+        "Diamkan bulatan adonan selama 10 menit.",
+        "Bulatan adonan tadi kemudian pipihkan dan masukkan isian sesuai selera, bentuk bulat lagi.",
+        "Diamkan bulatan adonan yang sudah diisi selama 30 menit.",
+        "Siapkan pengukusan dengan api sedang. Kukus bakpao selama 30 menit atau hingga bakpao matang.",
+        "Bakpao siap disantap selagi hangat."
+    ],
+    "rekomendasi" : {
+        "toko"      : "Bakpao Surabaya", 
+        "alamat"    : "Jl. Dharmahusada Indah Utara I No.66, Mulyorejo, Kec. Mulyorejo, Kota SBY, Jawa Timur 60115"
+    }
+}

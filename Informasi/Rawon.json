@@ -1,0 +1,27 @@
+{
+    "bahan" : [
+        "Daging Sapi",
+        "Air",
+        "Daun Salam",
+        "Serai",
+        "Lengkuas",
+        "Daun Jeruk",
+        "Bawang Merah",
+        "Bawang Putih",
+        "Cabai",
+        "Keluak Tua",
+        "Tauge",
+        "Telur Asin"
+    ],
+    "cara_pembuatan" : [
+        "Masak daging bersama daun salam, serai, lengkuas, dan daun jeruk sampai empuk dan matang.",
+        "Angkat daging, lalu potong kecil-kecil. Saring rebusan, didihkan lagi bersama irisan daging.",
+        "Panaskan minyak, tumis bumbu halus bersama irisan daun bawang sampai harum dan matang.",
+        "Angkat, lalu masukkan ke dalam kaldu daging. Masak dengan api kecil sampai mendidih kembali.",
+        "Tuang rawon ke dalam mangkuk, taburkan tauge pendek di atasnya. Sajikan bersama telur asin dan sambal terasi."
+    ],
+    "rekomendasi" : {
+        "toko"      : "Rawon Setan - Embong Malang",
+        "alamat"    : "Jl. Embong Malang No.78/I, Genteng, Kec. Genteng, Kota SBY, Jawa Timur 60261"
+    }
+}

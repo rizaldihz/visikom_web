@@ -1,0 +1,20 @@
+{
+    "bahan" : [
+        "Susu UHT",
+        "Susu Kental Manis",
+        "Susu Bubuk",
+        "Maizena",
+        "Vanili"
+    ],
+    "cara_pembuatan" : [
+        "Siapkan semua bahan, siapkan 1 baskom.",
+        "Masukkan susu dancow, susu uht, vanili dan skm, kocok dahulu setelah itu masukkan tbm, dan maizena.",
+        "Kocok dengan whisk 25 menit an agar bahan agak mengembang.",
+        "Setelah itu masukkan ke wadah dan ke freezer +- 5jam sampai 8 jam.",
+        "Setelah itu es krim siap disantap."
+    ],
+    "rekomendasi" : {
+        "toko"      : "Soto Ayam Lamongan Cak Har",
+        "alamat"    : "Jl. Dr. Ir. H. Soekarno No.220, Semolowaru, Kec. Sukolilo, Kota SBY, Jawa Timur 60117"
+    }
+}

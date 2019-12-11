@@ -1,11 +1,24 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<title>MAKAN Apps?</title>
+</head>
 <body>
+
     <div class="container">
-        <h1>Welcome to TensorFlow.js</h1>
-        <input type="file" onchange="readURL(this);" accept="image/*;capture=camera" capture>
+		<h1>MAKAN Apps?</h1>
+		<div>
+			<input type="file" onchange="readURL(this);" accept="image/*;capture=camera" capture>
+		</div>
         <img id="blah" src="#" alt="your image" />
         <br>
-        <span id="output"></span>
+		<div id="output"></div>
+		<div id='details'></div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.5"></script>
@@ -31,6 +44,8 @@
 
     	function readURL(input) {
 		  if (input.files && input.files[0]) {
+			  $('#output').text('classifying...');
+			  $('#details').text('')
 		  	// var file = input.files[0],                  // reference first file BLOB
 		  	// url = URL.createObjectURL(file),           // create an Object URL
 		  	// img = new Image();                         // create a temp. image object

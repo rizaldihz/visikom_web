@@ -1,13 +1,92 @@
-async function init(img){
-    model =  await tf.loadModel('tfjs_model/model.json');
-    console.log('model loaded from storage');
 
+let classes;
+let detailsJSON;
+let model = null;
+
+readTextFile('file:///D:/KULIAH/SEMESTER 5/VISI KOMPUTER/FINAL PROJECT/visikom_web/class.txt')
+
+function readTextFile(file)
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                classes = allText.split('\n')
+            }
+        }
+    }
+    rawFile.send(null);
+}
+
+function requestUpdateDetails(cls)
+{
+    file = 'file:///D:/KULIAH/SEMESTER 5/VISI KOMPUTER/FINAL PROJECT/visikom_web/Informasi/' + cls + '.json';
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                detailsJSON = rawFile.responseText;
+                const details = JSON.parse(detailsJSON)
+                updateDetails(details);
+            }
+        }
+    }
+    rawFile.send(null);
+}
+
+function updateDetails(details){
+    $('#details').html( `
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        Bahan:
+                    </td>
+                    <td>`
+                    + details.bahan + 
+                    `
+                </tr>
+                <tr>
+                    <td>
+                        Cara Pembuatan:
+                    </td>
+                    <td>`
+                    + details.cara_pembuatan + 
+                    `
+                </tr>
+                <tr>
+                    <td>
+                        Tempat Rekomendasi:
+                    </td>
+                    <td>`
+                    + details.rekomendasi.toko + '<br>' + details.rekomendasi.alamat +
+                    `
+                </tr>
+            </tbody>
+        </table>
+    `
+        );
+}
+
+async function init(img){
+    if(model===null){
+        model =  await tf.loadModel('tfjs_model/model.json');
+        console.log('model loaded from storage');
+    }
     let result = preprocess(img);
     const pred = model.predict(result).dataSync();
-    let i = indexOf(pred);
-    var arr=['kelas1','kelas2','kelas3','kelas4','kelas5','kelas6','kelas7','kelas8','kelas9','kelas10'];
-    console.log(arr[i]);
-    $('#output').text(arr[i]);
+    let cls = getClass(pred);
+    $('#output').text(classes[cls.idx] + ' ' + (cls.conf*100).toFixed(2) + '%');
+    requestUpdateDetails(classes[cls.idx]);
 }
 
 function preprocess(img)
@@ -26,7 +105,7 @@ function preprocess(img)
 
 }
 
-function indexOf(arr) {
+function getClass(arr) {
     if (arr.length === 0) {
         return -1;
     }
@@ -41,5 +120,5 @@ function indexOf(arr) {
         }
     }
 
-    return maxIndex;
+    return {'idx' : maxIndex, 'conf' : max};
 }

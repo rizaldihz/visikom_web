@@ -1,0 +1,25 @@
+{
+    "bahan" : [
+        "Bayam",
+        "Kacang Panjang",
+        "Labu Siam",
+        "Ketimun",
+        "Kecipir",
+        "Kol",
+        "Kemangi",
+        "Sambal Kacang"
+    ],
+    "cara_pembuatan" : [
+        "Siangi, cuci bersih, dan potong-potong sayuran.",
+        "Panaskan air hingga mendidih. Rebus sebentar masing-masing sayuran, kecuali kemangi. Angkat dan tiriskan. Sisihkan.",
+        "Haluskan kacang tanah yang telah digoreng.",
+        "Dalam satu wadah, campur kacang tanah, bumbu halus, dan air asam jawa. Aduk hingga rata.",
+        "Tambahkan air panas sampai kekentalan yang diinginkan. Koreksi rasanya.",
+        "Tata sayuran di piring saji. Siram dengan sambal kacang. Beri bahan pelengkap lainnya.",
+        "Siap disajikan."
+    ],
+    "rekomendasi" : {
+        "toko"      : "Nasi Pecel Madiun Pak Jito", 
+        "alamat"    : "Jl. Raya Mulyosari No.318, Dukuh Sutorejo, Kec. Mulyorejo, Kota SBY, Jawa Timur 60112"
+    }
+}

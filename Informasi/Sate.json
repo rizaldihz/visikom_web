@@ -1,0 +1,24 @@
+{
+    "bahan" : [
+        "Kacang Tanah",
+        "Bawang Merah",
+        "Bawang Putih",
+        "Kemiri",
+        "Cabai Merah",
+        "Santan",
+        "Air",
+        "Gula",
+        "Garam",
+        "Minyak Goreng"
+    ],
+    "cara_pembuatan" : [
+        "Blender kacang tanah goreng, kemiri, lombok merah, bawang putih, bawang merah, dan air. Namun, jangan terlalu halus supaya kacang masih ada teksturnya.",
+        "Panaskan minyak di atas wajan, tuangkan bumbu kacang, lalu tumis hingga berminyak.",
+        "Masukkan santan, aduk lagi beberapa saat.",
+        "Tambahkan gula dan garam sesuai selera. Aduk hingga teksturnya mulai kental, tapi jangan sampai kering."
+    ],
+    "rekomendasi" : {
+        "toko"      : "Raja Sate Surabaya", 
+        "alamat"    : "Jl. Kemangi No.17, Pacar Keling, Kec. Tambaksari, Kota SBY, Jawa Timur 60131"
+    }
+}

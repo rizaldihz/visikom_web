@@ -1,0 +1,25 @@
+{
+    "bahan" : [
+        "Daging Sapi",
+        "Tepung Kanji",
+        "Telur",
+        "Lada",
+        "Garam",
+        "Bawang Putih",
+        "Air"
+    ],
+    "cara_pembuatan" : [
+        "Masukkan daging sapi yang telah digiling ke dalam wadah, campurkan tepung kanji, telur, lada bubuk, garam dan bawang putih yang telah dihaluskan.",
+        "Campur atau uleni dengan tangan atau bisa menggunakan alat sampai semua tercampur sempurna.",
+        "Jika dirasa adonan masih lembek dan sulit dibentuk, maka bisa ditambahkan es batu secara perlahan sampai dirasa adonan bisa dibentuk.",
+        "Rebus air dalam panci sampai mendidih.",
+        "Ambil adonan daging dengan tangan lalu bentuk bulat baik dengan kedua tangan atau dengan satu tangan ditekan hingga adonan keluar melalui jari telunjuk dan jempol.",
+        "Masukkan adonan yang telah terbentuk ke dalam air panas.",
+        "Lanjutkan hingga semua adonan habis.",
+        "Jika pentol telah mengapung maka pentol telah matang. Angkat."
+    ],
+    "rekomendasi" : {
+        "toko"      : "Bakso CITRA SATU PUTRA", 
+        "alamat"    : "Jl. Raya Mulyosari No.177-179, Kalisari, Kec. Mulyorejo, Kota SBY, Jawa Timur 60113"
+    }
+}
