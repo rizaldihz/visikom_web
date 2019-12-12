@@ -24,58 +24,22 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.5"></script>
     <script src="./index.js"></script>
     <script type="text/javascript">
-
-  //   	function preprocess(img)
-		// {
-
-		//     //convert the image data to a tensor 
-		//     let tensor = tf.browser.fromPixels(img)
-		//     //resize to 50 X 50
-		//     const resized = tf.image.resizeBilinear(tensor, [224, 224]).toFloat()
-		//     // Normalize the image 
-		//     const offset = tf.scalar(255.0);
-		//     const normalized = tf.scalar(1.0).sub(resized.div(offset));
-		//     //We add a dimension to get a batch shape 
-		//     const batched = normalized.expandDims(0)
-		//     return batched
-
-		// }
-
-
     	function readURL(input) {
 			console.log('classifying...')
 			$('#output').html('classifying...');
 			$('#details').html('')
 			
-		  if (input.files && input.files[0]) {
-		  	// var file = input.files[0],                  // reference first file BLOB
-		  	// url = URL.createObjectURL(file),           // create an Object URL
-		  	// img = new Image();                         // create a temp. image object
-		    
-		   //  img.onload = function() {                    // handle async image loading
-		   //    URL.revokeObjectURL(this.src);             // free memory held by Object URL
-		   //    c.getContext("2d").drawImage(this, 0, 0);  // draw image onto canvas (lazy method™)
-		   //  };
-
-		   //  img.src = url;        
+		  if (input.files && input.files[0]) {      
 		    var reader = new FileReader();
 		    reader.onload = function (e) {
 		      $('#blah')
 		        .attr('src', e.target.result)
 		        .width(224)
 		        .height(224);
+		        var img = document.getElementById('blah');
+				predicting(img);
 		    };
 		    reader.readAsDataURL(input.files[0])
-
-		    var canvas = document.createElement('canvas');
-			var context = canvas.getContext('2d');
-			var img = document.getElementById('blah');
-			console.log(img);
-			// canvas.width = img.width;
-			// canvas.height = img.height;
-			// context.drawImage(img, 0, 0 );
-			// var myData = context.getImageData(224, 224, img.width, img.height);
-			init(img);
 		  }
 		}
     </script>

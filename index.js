@@ -3,7 +3,9 @@ let classes;
 let detailsJSON;
 let model = null;
 
-readTextFile('file:///D:/KULIAH/SEMESTER 5/VISI KOMPUTER/FINAL PROJECT/visikom_web/class.txt')
+readTextFile('class.txt')
+
+init();
 
 function readTextFile(file)
 {
@@ -25,7 +27,7 @@ function readTextFile(file)
 
 function requestUpdateDetails(cls)
 {
-    file = 'file:///D:/KULIAH/SEMESTER 5/VISI KOMPUTER/FINAL PROJECT/visikom_web/Informasi/' + cls + '.json';
+    file = 'Informasi/' + cls + '.json';
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
     rawFile.onreadystatechange = function ()
@@ -77,13 +79,18 @@ function updateDetails(details){
         );
 }
 
-async function init(img){
+async function init(){
     if(model===null){
         model =  await tf.loadModel('tfjs_model/model.json');
         console.log('model loaded from storage');
     }
+}
+
+function predicting(img){
+    console.log('predicting...',img);
     let result = preprocess(img);
     const pred = model.predict(result).dataSync();
+    console.log('predicted...');
     let cls = getClass(pred);
     $('#output').text(classes[cls.idx] + ' ' + (cls.conf*100).toFixed(2) + '%');
     requestUpdateDetails(classes[cls.idx]);
