@@ -47,7 +47,7 @@ function requestUpdateDetails(cls)
 
 function updateDetails(details){
     $('#details').html( `
-        <table>
+        <table class='table-stripped'>
             <tbody>
                 <tr>
                     <td>

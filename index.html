@@ -15,7 +15,7 @@
 		<div>
 			<input type="file" onchange="readURL(this);" accept="image/*;capture=camera" capture>
 		</div>
-        <img id="blah" src="#" alt="your image" />
+        <img id="blah" src="#" class='img-rounded' alt="your image" />
         <br>
 		<div id="output"></div>
 		<div id='details'></div>
@@ -23,7 +23,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.5"></script>
     <script src="./index.js"></script>
-    <script type="text/javascript">
+	<script type="text/javascript">
+
     	function readURL(input) {
 			console.log('classifying...')
 			$('#output').html('classifying...');
@@ -35,11 +36,11 @@
 		      $('#blah')
 		        .attr('src', e.target.result)
 		        .width(224)
-		        .height(224);
-		        var img = document.getElementById('blah');
+				.height(224);
+				var img = document.getElementById('blah');
 				predicting(img);
 		    };
-		    reader.readAsDataURL(input.files[0])
+			reader.readAsDataURL(input.files[0]);
 		  }
 		}
     </script>
